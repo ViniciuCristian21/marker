@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Marker",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
