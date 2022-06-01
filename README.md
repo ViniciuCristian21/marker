@@ -9,4 +9,4 @@ Site feito com a intenção de aprimorar meus conhecimentos em desenvolvimento c
 
 <img src="/src/assets/rd-site-marker.png" alt="Imagem do site"/>
 
-Acesse em: <a href="#">Marker | Notes</a>
+Acesse em: <a href="https://marker-jet.vercel.app/home">Marker | Notes</a>
