@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Poppins:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0 1rem 0;
+  gap: 16px;
+}
+.head-title {
+  font-size: 200%;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+.button-save {
+  width: 150px;
+}
+.notes {
+  padding: 16px;
+}
+.notes-body {
+  max-width: 250px;
+  margin: 5px 5px;
+
+  background: #e6e6e6;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+.notes-body:hover {
+  opacity: 0.5;
+
+  border: #000 1px solid;
+
+  transition: 0.2s;
+}
+.footer {
+  margin: 18px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    padding: 8px;
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.6;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+    }
+  }
+}
+// font-family: 'Poppins', sans-serif;

@@ -1,0 +1,55 @@
+<ion-content>
+  <div class="container">
+    <header class="head">
+      <h1 class="head-title">Marcador de notas.</h1>
+      <div class="controlers">
+        <ion-button color="light" fill="outline" class="button-save" (click)="saveNote()">Salvar</ion-button>
+      </div>
+    </header>
+    <body>
+      <section class="write-notes">
+        <div class="notes">
+          <ion-row>
+            <ion-col class="notes-body" *ngFor="let n of AllNotes" size="2">
+              <div (click)="removeNote(n.title)">
+                  <ion-input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Titulo"
+                  value="{{n.title}}"
+                  readonly="true"
+                ></ion-input>
+                <ion-textarea
+                  readonly="true"
+                  rows="6"
+                  maxlength="170"
+                  value="{{n.text}}"
+                  name="text"></ion-textarea>
+              </div>
+            </ion-col>
+            <ion-col class="new-note notes-body">
+              <ion-input
+                [(ngModel)]="title"
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Titulo"
+              ></ion-input>
+              <ion-textarea
+                [(ngModel)]="text"
+                name="text"
+                placeholder="Conteúdo..."
+                rows="6"
+                maxlength="170"
+              ></ion-textarea>
+            </ion-col>
+          </ion-row>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>Developed by <a href="#"> Viniciu Cristian</a></p>
+      </footer>
+    </body>
+  </div>
+</ion-content>
